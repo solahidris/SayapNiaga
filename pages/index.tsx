@@ -10,22 +10,22 @@ import ThankYouGallery from "@/components/ThankYouGallery";
 export default function Home() {
   return (
     <div className="bg-black min-h-[100vh] text-black">
-      <Header />
+      {/* <Header /> */}
       <HomepageCarousel />
 
       <div className="p-8">
-        <SearchFilterGeneral />     
+        {/* <SearchFilterGeneral />      */}
         <br/>
 
-        <SearchFilterBody />
+        {/* <SearchFilterBody /> */}
         <br/>
         
-        <div className="px-12">
+        <div className="lg:px-12">
           <ThankYouGallery />
         </div>
       </div>
       
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
