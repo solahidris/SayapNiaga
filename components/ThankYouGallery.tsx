@@ -30,7 +30,7 @@ const ThankYouGallery = () => {
   return (
     <div className="flex text-white">
       <div className="flex flex-col">
-        <p className="text-[36px] lg:text-[48px] font-semibold py-6 tracking-widest text-center uppercase">Thank You For Buying With Us</p>
+        <p className="text-[36px] lg:text-[48px] font-semibold py-6 tracking-wide text-center uppercase">Thank You For Buying With Us</p>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           {ImageToRender.map((src, index)=>{
             return(

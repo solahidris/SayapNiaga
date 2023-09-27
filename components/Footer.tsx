@@ -59,7 +59,7 @@ const Footer = () => {
 
           {/* Logo - Most Right */}
           <div>
-            <Image src="/sayap-logo-header.png" alt="header-logo" width={100} height={100} className="w-[400px] h-[auto]"/>
+            <Image src="/sayap-logo-header.png" alt="header-logo" width={200} height={200} className="w-[400px] h-[auto]"/>
             <p className="text-zinc-600 pl-8">© Sayap Niaga Sdn. Bhd. All Rights Reserved.</p>
           </div>
         </div>

@@ -21,8 +21,8 @@ const Header = () => {
       {/* Content for screens with a width less than 668px */}
       <div className="lg:hidden">
         <div className="flex items-center justify-between">
-          <button onClick={handleOpenMenu} className="mx-8 px-5 py-3 bg-orange-500 rounded">≡</button>
-          <Image src="/sayap-logo-header.png" alt="header-logo" width={100} height={100} className="w-[200px] h-[auto] mr-4"/>
+          <button onClick={handleOpenMenu} className="mx-4 px-5 py-3 bg-orange-500 rounded">≡</button>
+          <Image src="/sayap-logo-header.png" alt="header-logo" width={100} height={100} className="w-[200px] h-[auto] mr-2"/>
         </div>
         {isMenuOpened &&
                 <div className="flex flex-col">

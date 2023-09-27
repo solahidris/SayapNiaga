@@ -20,7 +20,7 @@ const SearchFilterBody = () => {
       {/* white line divider */}
       <div className="bg-white/10 my-20 py-1"></div>
       {/* content */}
-      <div className="flex flex-col bg-red-4000 w-full px-8">
+      <div className="flex flex-col bg-red-4000 w-full px-2">
         <p className="mx-4 font-semibold italic text-lg pb-8">Search by Body Type</p>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-center lg:w-[800px] mx-auto bg-green-4000">
           {bodyTypeList.map((body, index) => (
