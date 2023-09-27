@@ -31,7 +31,7 @@ const HomepageCarousel = () => {
 
   return (
     <div className="flex bg-black text-white">
-      <div className="w-full h-[500px] relative">
+      <div className="w-[100vw] lg:h-[500px] h-[300px] relative">
         {imageSources.map((src, index) => (
           <Image
             priority
@@ -40,7 +40,8 @@ const HomepageCarousel = () => {
             alt={`Image ${index + 1}`}
             width={1000}
             height={1000}
-            className={`w-full h-[500px] object-cover object-top absolute transition-opacity duration-1000 ${
+            // className={`w-[100vw] h-[500px] object-cover object-top absolute transition-opacity duration-1000 ${
+            className={`w-[100vw] lg:h-[500px] h-[300px] object-cover object-top absolute transition-opacity duration-1000 ${
               currentImageIndex === index ? "opacity-100" : "opacity-0"
             }`}
           />

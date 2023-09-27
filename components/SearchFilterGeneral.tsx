@@ -159,15 +159,16 @@ const SearchFilterGeneral = () => {
           <span className="text-lg font-semibold mb-0 px-4 py-2 rounded-lg tracking-wide bg-orange-5000 italic">Find your next car</span>
         </div>
 
-        <div className="flex gap-8 justify-center">
+        {/* Besides Title */}
+        <div className="flex flex-wrap pt-8 gap-8 justify-center">
           {/* Input Text */}
           <div className="flex items-center">
-            <input type="text" placeholder="Search Car by Brand / Model / ID" className="w-[300px] h-[50px] px-4 py-2 rounded"/>
+            <input type="text" placeholder="Search Car by Brand / Model / ID" className="w-[335px] h-[50px] px-4 py-2 rounded"/>
           </div>
 
           {/* Select Brand */}
           <div className="flex items-center">
-            <select className={`p-2 rounded h-[50px] ${brandSelected === "" ? "text-zinc-400" : "text-black"}`} onChange={handleBrandSelect} defaultValue="all" >
+            <select className={`p-2 rounded w-[150px] h-[50px] ${brandSelected === "" ? "text-zinc-400" : "text-black"}`} onChange={handleBrandSelect} defaultValue="all" >
               <option value="all" disabled>
                 Brand
               </option>
@@ -181,7 +182,7 @@ const SearchFilterGeneral = () => {
 
           {/* Select Model */}
           <div className="flex items-center">
-            <select className={`p-2 rounded h-[50px] ${modelSelected === "" ? "text-zinc-400" : "text-black"}`} onChange={handleModelSelect} defaultValue="all" >
+            <select className={`p-2 rounded w-[150px] h-[50px] ${modelSelected === "" ? "text-zinc-400" : "text-black"}`} onChange={handleModelSelect} defaultValue="all" >
               <option value="all" disabled>
                 Model
               </option>
@@ -195,7 +196,7 @@ const SearchFilterGeneral = () => {
 
           {/* Select Year */}
           <div className="flex items-center">
-            <select className={`p-2 rounded h-[50px] ${yearSelected === "" ? "text-zinc-400" : "text-black"}`} onChange={handleYearSelect} defaultValue="all" >
+            <select className={`p-2 rounded w-[100px] h-[50px] ${yearSelected === "" ? "text-zinc-400" : "text-black"}`} onChange={handleYearSelect} defaultValue="all" >
               <option value="all" disabled>
                 Year
               </option>
@@ -243,11 +244,12 @@ const SearchFilterGeneral = () => {
           </div>
 
           {/* Search Button */}
-          <div className="flex items-center">
-            <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Search</button>
+          <div className="flex items-center lg:w-[120px] w-full">
+            <button className="px-6 w-full lg:w-[120px] mx-6 lg:mx-0 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Search</button>
           </div>  
           
         </div>
+
       </div>
     </div>
   );
