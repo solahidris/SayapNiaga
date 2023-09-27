@@ -8,7 +8,7 @@ import { GrFacebook, GrInstagram, GrYoutube } from "react-icons/gr";
 
 const Header = () => {
   return(
-    <div className="sticky top-0 flex justify-between bg-black text-white z-10">
+    <div className="sticky top-0 flex justify-between bg-black text-white z-10 shadow-lg shadow-zinc-800">
       <div className="flex flex-grow justify-between gap-8 mx-8">
         <div className="flex gap-8 items-center">
           <Link href="/" className="bg-orange-500 rounded px-4 py-2">Home</Link>

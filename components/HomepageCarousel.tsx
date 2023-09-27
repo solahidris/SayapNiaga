@@ -30,7 +30,7 @@ const HomepageCarousel = () => {
   }, [currentImageIndex]);
 
   return (
-    <div className="flex bg-red-300 text-white">
+    <div className="flex bg-black text-white">
       <div className="w-[100vw] h-[500px] relative">
         {imageSources.map((src, index) => (
           <Image

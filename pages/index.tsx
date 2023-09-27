@@ -9,16 +9,16 @@ import ThankYouGallery from "@/components/ThankYouGallery";
 
 export default function Home() {
   return (
-    <div className="bg-white min-h-[100vh] text-black">
+    <div className="bg-black min-h-[100vh] text-black">
       <Header />
       <HomepageCarousel />
-      <p>---</p>
+      <div className="p-8">
       <SearchFilterGeneral />
       <p>---</p>
       <SearchFilterBody />
       <p>---</p>
       <ThankYouGallery />
-      <p>---</p>
+      </div>
       <Footer />
     </div>
   );
