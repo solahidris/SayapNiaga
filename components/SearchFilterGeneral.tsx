@@ -7,10 +7,19 @@ const SearchFilterGeneral = () => {
   const [brandSelected, setBrandSelected] = useState("");
   const [modelSelected, setModelSelected] = useState("");
   const [yearSelected, setYearSelected] = useState("");
-  const [filteredModelsList, setFilteredModelsList] = useState([]);
-  const [filteredYearList, setFilteredYearList] = useState([]);
+  const [filteredModelsList, setFilteredModelsList] = useState<Car[]>([]);
+  const [filteredYearList, setFilteredYearList] = useState<Car[]>([]);
   const [priceRange, setPriceRange] = useState({ min: 0, max: 500000 });
 
+  type Car = {
+    brand: string;
+    model: string;
+    year: string;
+    ID: string;
+    bodyType: string;
+    price: number; // Add the price property here
+  };
+  
 
   const carList = [
     {
@@ -125,7 +134,7 @@ const SearchFilterGeneral = () => {
 
 
   // Handle Price Range Input
-  const handlePriceRangeChange = (e) => {
+  const handlePriceRangeChange = (e:any) => {
     setPriceRange({ ...priceRange, [e.target.name]: parseInt(e.target.value, 10) });
   };
   // Filter cars based on price range
@@ -133,7 +142,8 @@ const SearchFilterGeneral = () => {
     const { min, max } = priceRange;
 
     const filteredCars = carList.filter(
-      (car) => parseInt(car.price, 10) >= min && parseInt(car.price, 10) <= max
+      // (car) => parseInt(car.price, 10) >= min && parseInt(car.price, 10) <= max
+      (car) => (car.price, 10) >= min && (car.price, 10) <= max
     );
 
     setFilteredModelsList(filteredCars);
@@ -234,7 +244,7 @@ const SearchFilterGeneral = () => {
 
           {/* Search Button */}
           <div className="flex items-center">
-            <button onClick={null} className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Search</button>
+            <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Search</button>
           </div>  
           
         </div>
