@@ -12,13 +12,19 @@ export default function Home() {
     <div className="bg-black min-h-[100vh] text-black">
       <Header />
       <HomepageCarousel />
+
       <div className="p-8">
-      <SearchFilterGeneral />
-      <p>---</p>
-      <SearchFilterBody />
-      <p>---</p>
-      <ThankYouGallery />
+        <SearchFilterGeneral />     
+        <br/>
+
+        <SearchFilterBody />
+        <br/>
+        
+        <div className="px-12">
+          <ThankYouGallery />
+        </div>
       </div>
+      
       <Footer />
     </div>
   );

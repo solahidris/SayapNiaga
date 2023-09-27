@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { GrFacebook, GrInstagram, GrYoutube } from "react-icons/gr";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
@@ -10,7 +9,7 @@ import { BsFillTelephoneInboundFill } from "react-icons/bs";
 const Footer = () => {
   return (
     <div className="flex bg-black text-white">
-      <div className="flex flex-grow justify-between gap-8 mx-8 py-8">
+      <div className="flex flex-grow justify-between gap-8 mx-20 py-20">
         
         {/* Address - Most Left */}
         <div className="flex flex-col gap-0 items-start">
@@ -57,13 +56,8 @@ const Footer = () => {
 
         {/* Logo - Most Right */}
         <div>
-          <Image
-            src="/sayap-logo-header.png"
-            alt="header-logo"
-            width={400}
-            height={100}
-          />
-          <p className="text-zinc-600">© Sayap Niaga Sdn. Bhd. All Rights Reserved.</p>
+          <Image src="/sayap-logo-header.png" alt="header-logo" width={100} height={100} className="w-[400px] h-[auto]"/>
+          <p className="text-zinc-600 pl-8">© Sayap Niaga Sdn. Bhd. All Rights Reserved.</p>
         </div>
       </div>
     </div>

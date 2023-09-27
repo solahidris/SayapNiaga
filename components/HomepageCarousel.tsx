@@ -34,6 +34,7 @@ const HomepageCarousel = () => {
       <div className="w-[100vw] h-[500px] relative">
         {imageSources.map((src, index) => (
           <Image
+            priority
             key={index}
             src={src}
             alt={`Image ${index + 1}`}
