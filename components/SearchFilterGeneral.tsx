@@ -104,7 +104,7 @@ const SearchFilterGeneral = () => {
       console.log("Model Selceted:", modelSelected);
       console.log("Filtered years:", years);
     }
-  }, [brandSelected, modelSelected]);
+  }, [brandSelected, modelSelected, carList]);
 
   // Extract Unique Model
   const uniqueModels = Array.from(
@@ -147,7 +147,7 @@ const SearchFilterGeneral = () => {
     );
 
     setFilteredModelsList(filteredCars);
-  }, [priceRange]);
+  }, [priceRange, carList]);
 
 
 

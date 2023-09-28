@@ -16,7 +16,7 @@ const AboutUsPage = () => {
           <p>Sayap Niaga Sdn Bhd is a Japanese and Continental Cars Importer and have been operating since 2011 with commitment to qualities.</p>
           <p>We are one of the many best Cars Importers and Distributors in Kuala Lumpur to serve car lovers.</p>
           <p>Strategically located in Setapak, opposite Plaza Tol Ayer Panas, easily accessible with DUKE Highway and Jalan Genting Klang.</p>
-          <p>We offer the most popular Family MPV's car such as Alphard, Vellfire, Wish, Estima, Voxy and Odyssey.</p>
+          <p>We offer the most popular Family MPV&#39;s car such as Alphard, Vellfire, Wish, Estima, Voxy and Odyssey.</p>
           <p>As we value our customer passion towards cars, hence we also offer varieties such as Hatch, Fastback, Sports Sedan and Continental Cars.</p>
           <p>As Customer Satisfaction is always our mission, we offer the best price based on Grade, Mileage and Condition, and with warranty up to 7 years.</p>
           <p>We want to be one of the standout Cars Importers and Distributors. We will continue to grow our business with the mission that suits the lifestyle</p>

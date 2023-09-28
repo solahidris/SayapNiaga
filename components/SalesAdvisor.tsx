@@ -73,9 +73,8 @@ const SalesAdvisor = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {salesAdvisorList.map((src, index) => {
             return (
-              <div>
+              <div key={index}>
                 <Image
-                  key={index}
                   src={src.image}
                   alt={`Image ${index + 1}`}
                   width={250}
