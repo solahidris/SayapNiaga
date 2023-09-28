@@ -2,19 +2,20 @@
 
 import Image from "next/image";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import Link from "next/link";
+import SalesAdvisor from "@/components/SalesAdvisor";
 
 const SalesTeamPage = () => {
   return (
-    <div className="bg-white min-h-[100vh] text-black">
-      <Header />
-      <p>---</p>
-      <p>this is the</p>
-      <p>Sales Team</p>
-      <p>Page</p>
-      <p>---</p>
-      <Link href="/">Return To Home</Link>
-    </div>
+    <div className="bg-black min-h-[100vh] text-black">
+    <Header />
+   <div className="p-8 mt-6">
+      <span className="font-semibold text-xl border border-orange-500 text-white px-6 py-3 rounded">Sales Team</span>
+      <SalesAdvisor />
+      </div>
+    <Footer />
+     </div>
   );
 };
 
