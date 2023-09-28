@@ -16,20 +16,22 @@ const SearchFilterBody = () => {
   ];
 
   return (
-    <div className="flex flex-col bg-sky-3000 text-white w-full">
+    <div className="flex flex-col text-white w-full">
       {/* white line divider */}
-      <div className="bg-white/10 my-20 py-1"></div>
+      <div className="bg-white/10 mb-14 mt-10 py-1"></div>
       {/* content */}
-      <div className="flex flex-col bg-red-4000 w-full px-2">
-        <p className="mx-4 font-semibold italic text-lg pb-8">Search by Body Type</p>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-center lg:w-[800px] mx-auto bg-green-4000">
+      <div className="flex flex-col w-full px-2">
+        <div className="mb-8">
+          <span className="mb-20 font-semibold text-sm lg:text-xl border border-orange-500 text-white px-6 py-3 rounded">Search by Body Type</span>
+        </div>
+        <div className="pt-4 lg:pt-10 grid grid-cols-2 lg:grid-cols-4 gap-8 justify-center lg:w-[800px] mx-auto">
           {bodyTypeList.map((body, index) => (
-            <button key={index} className="bg-white hover:bg-white/80 text-black text-center shadow-md shadow-white px-4 py-4 rounded-lg">{body}</button>
+            <button key={index} className="bg-white hover:bg-white/80 text-black text-xs lg:text-base text-center shadow-md shadow-white px-4 py-4 rounded-lg">{body}</button>
           ))}
         </div>
       </div>
       {/* white line divider */}
-      <div className="bg-white/10 my-8 py-1 mt-24"></div>
+      <div className="bg-white/10 my-8 py-1 mt-20"></div>
     </div>
   );
 };

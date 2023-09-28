@@ -18,7 +18,6 @@ export default function Home() {
         <br/>
 
         <SearchFilterBody />
-        <br/>
         
         <div className="lg:px-12">
           <ThankYouGallery />

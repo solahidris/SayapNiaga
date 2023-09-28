@@ -104,7 +104,7 @@ const SearchFilterGeneral = () => {
       console.log("Model Selceted:", modelSelected);
       console.log("Filtered years:", years);
     }
-  }, [brandSelected, modelSelected, carList]);
+  }, [brandSelected, modelSelected]);
 
   // Extract Unique Model
   const uniqueModels = Array.from(
@@ -147,7 +147,7 @@ const SearchFilterGeneral = () => {
     );
 
     setFilteredModelsList(filteredCars);
-  }, [priceRange, carList]);
+  }, [priceRange]);
 
 
 
@@ -155,12 +155,12 @@ const SearchFilterGeneral = () => {
     <div className="flex text-white">
       <div className="flex flex-col w-full">
         {/* Title */}
-        <div className="py-4">
-          <span className="text-lg font-semibold mb-0 px-4 py-2 rounded-lg tracking-wide bg-orange-5000 italic">Find your next car</span>
+        <div className="mb-8 pt-4">
+          <span className="mb-20 font-semibold text-sm lg:text-xl border border-orange-500 text-white px-6 py-3 rounded">Search by Body Type</span>
         </div>
 
         {/* Besides Title */}
-        <div className="flex flex-wrap pt-8 gap-8 justify-center">
+        <div className="flex flex-wrap pt-4 lg:pt-8 gap-8 justify-center">
           {/* Input Text */}
           <div className="flex items-center">
             <input type="text" placeholder="Search Car by Brand / Model / ID" className="w-[335px] h-[50px] px-4 py-2 rounded"/>
