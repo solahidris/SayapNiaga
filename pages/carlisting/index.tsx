@@ -1,19 +1,20 @@
 // directory: src/pages/carlisting/index.tsx (Car Listing Page)
 
-import Image from "next/image";
 import Header from "@/components/Header";
-import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const CarListingPage = () => {
   return (
-    <div className="bg-white min-h-[100vh] text-black">
+    <div className="bg-black min-h-[100vh] text-black">
       <Header />
-      <p>---</p>
-      <p>this is the</p>
-      <p>Car Listing</p>
-      <p>Page</p>
-      <p>---</p>
-      <Link href="/">Return To Home</Link>
+      <div className="p-6 mt-6 lg:ml-12">
+        <span className="font-semibold text-sm lg:text-xl border border-orange-500 text-white px-6 py-3 rounded">Car Listing</span>
+        <div className="flex flex-col pt-10 gap-4">
+          <span className="font-semibold text-sm lg:text-xl border border-orange-500 text-white px-6 py-3 rounded">Under Construction</span>
+          <span className="font-semibold text-sm lg:text-xl border border-orange-500 text-white px-6 py-3 rounded">Please Visit our Showroom</span>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

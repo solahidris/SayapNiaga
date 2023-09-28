@@ -10,8 +10,6 @@ const Footer = () => {
   return (
     <div className="flex bg-black text-white">
 
-      {/* Content for screens with a width of 668px or more */}
-      {/* <div className="hidden lg:block"> */}
         <div className="flex flex-col lg:flex-row flex-grow justify-between gap-8 mx-8 lg:mx-20 py-20">
           
           {/* Address - Most Left */}

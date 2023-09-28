@@ -10,8 +10,8 @@ const SalesTeamPage = () => {
   return (
     <div className="bg-black min-h-[100vh] text-black">
     <Header />
-   <div className="p-8 mt-6">
-      <span className="font-semibold text-xl border border-orange-500 text-white px-6 py-3 rounded">Sales Team</span>
+   <div className="p-6 mt-6 lg:ml-12">
+      <span className="font-semibold text-sm lg:text-xl border border-orange-500 text-white px-6 py-3 rounded">Sales Team</span>
       <SalesAdvisor />
       </div>
     <Footer />

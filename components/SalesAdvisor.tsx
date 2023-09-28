@@ -66,7 +66,7 @@ const SalesAdvisor = () => {
   return (
     <div className="flex text-white  justify-center">
       <div className="flex flex-col">
-        <p className="text-[24px] lg:text-[36px] font-semibold py-6 tracking-wide text-center uppercase">
+        <p className="pt-12 lg:pt-0 text-[16px] lg:text-[36px] font-semibold py-6 tracking-wide text-center uppercase">
           Feel free to ask us any questions
         </p>
 
@@ -82,22 +82,22 @@ const SalesAdvisor = () => {
                   height={250}
                   className="h-auto max-w-full rounded-lg object-cover"
                 />
-                <p className="pt-4 capitalize text-center text-xl font-semibold tracking-wide">
+                <p className="pt-4 capitalize text-center text-base lg:text-xl font-semibold tracking-wide">
                   {src.name}
                 </p>
-                <p className="text-center text-sm tracking-wide">{src.phone}</p>
+                <p className="text-center text-[10px] lg:text-sm tracking-wide">{src.phone}</p>
                 <div className="pt-4 grid grid-cols-2">
                   <a href={`tel:${src.phone}`} className="bg-blue-500 flex rounded-l-xl">
-                    <button className="grow flex justify-center py-3">
-                      <BsFillTelephoneFill className="w-[30px] h-[30px]" />
+                    <button className="grow flex justify-center items-center py-3">
+                      <BsFillTelephoneFill className="lg:w-[30px] lg:h-[30px] w-[20px] h-[20px]" />
                     </button>
                   </a>
                   <a
                     href={`https://api.whatsapp.com/send?phone=6${src.phone}`}
                     className="bg-green-500 flex rounded-r-xl"
                   >
-                    <button className="grow flex justify-center py-3">
-                      <BsWhatsapp className="w-[30px] h-[30px]" />
+                    <button className="grow flex justify-center items-center py-3">
+                      <BsWhatsapp className="lg:w-[30px] lg:h-[30px] w-[20px] h-[20px]" />
                     </button>
                   </a>
                 </div>
