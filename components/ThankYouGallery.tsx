@@ -7,6 +7,8 @@ import { useRouter } from "next/router";
 const ThankYouGallery = () => {
 
   const codeline = "another line of code";
+  const codeline2 = "another line of code";
+  const codeline3 = "another line of code";
 
   // Check if on Gallery Page
   const router = useRouter();
